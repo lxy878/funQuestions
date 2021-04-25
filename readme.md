@@ -7,3 +7,4 @@
 * kth largest element
 * isomorphic
 * rotate array
+* multiples 3 and 5
