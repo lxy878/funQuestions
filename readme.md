@@ -10,3 +10,4 @@
 * multiples 3 and 5
 * merge intervals
 * reverse PN
+* reverse words
