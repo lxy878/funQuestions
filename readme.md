@@ -11,3 +11,4 @@
 * merge intervals
 * reverse PN
 * reverse words
+* set matrix zeros
