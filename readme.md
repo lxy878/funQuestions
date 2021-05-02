@@ -12,3 +12,4 @@
 * reverse PN
 * reverse words
 * set matrix zeros
+* spiral matrix
