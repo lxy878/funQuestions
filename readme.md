@@ -13,3 +13,4 @@
 * reverse words
 * set matrix zeros
 * spiral matrix
+* spiral matrix 2
