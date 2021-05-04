@@ -14,3 +14,4 @@
 * set matrix zeros
 * spiral matrix
 * spiral matrix 2
+* merge sorted array
