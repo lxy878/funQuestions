@@ -16,3 +16,4 @@
 * spiral matrix 2
 * merge sorted array
 * 3 sum closest
+* merget two sorted list
