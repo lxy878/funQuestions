@@ -13,9 +13,10 @@ function rotateArray(arr, k){
     if(k<1 || arr.length == 0) return null
     
     if(k>arr.length) k %= arr.length
+    let  a = arr.length - k
+    reverse(arr, 0, a-1)
+    reverse(arr, a, arr.length-1)
     reverse(arr, 0, arr.length-1)
-    reverse(arr, 0, k-1)
-    reverse(arr, k, arr.length-1)
     console.log(arr)
 }
 
@@ -29,4 +30,5 @@ const reverse = (arr, l, r)=>{
     }
 }
 rotateArray([1,2,3,4,5], 2)
-rotateArray([1,2,3,4,5], 8)
+rotateArray([1,2,3,4,5], 4)
+rotateArray([1,2,3,4,5,9,10], 8)
