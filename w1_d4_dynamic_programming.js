@@ -48,7 +48,20 @@ function maxConsecutiveSum(arr) {
 // Time Complexity:
 // Auxiliary Space Complexity:
 function bitFlip (arr, n) {
-  //YOUR WORK HERE
+  let left = 0, right = 0
+  let count = 0, max = 0
+  while(right < arr.length){
+    if(arr[right]===0) count ++
+    right++
+    while(count>n){
+      if(arr[left]===0){
+        count--
+      }
+      left++
+    }
+    max = Math.max(max, right-left)
+  }
+  return max
 }
 
 
