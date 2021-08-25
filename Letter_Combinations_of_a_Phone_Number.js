@@ -5,13 +5,10 @@
 
 // digits >= 0 && digits<=4
 // [2,9]
-
-const letters = ['abc', 'def', 'ghi', 'jkl', 'mno', 'pqrs', 'tuv', 'wxyz']
-
 var letterCombinations = function(digits) {
+    const letters = ['abc', 'def', 'ghi', 'jkl', 'mno', 'pqrs', 'tuv', 'wxyz']
     if(digits.length === 0) return []
     let result = []
-    let count = 0
     for(let d=0; d<digits.length; d++){
         let digit = digits[d]
         let sub =  letters[parseInt(digit)-2].split("")
@@ -31,6 +28,4 @@ var letterCombinations = function(digits) {
     return result
 };
 
-console.log(letterCombinations("23"))
-console.log(letterCombinations(""))
-console.log(letterCombinations("2"))
+module.exports = letterCombinations
